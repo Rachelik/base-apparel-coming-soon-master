@@ -1,0 +1,150 @@
+/* font-family: 'Kumbh Sans', sans-serif; */
+#main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url(images/bg-pattern-desktop.svg);
+}
+
+.left-container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 800px;
+    padding: 70px 170px 159px 210px;
+    box-sizing: border-box;
+}
+
+.right-container {
+    text-align: right;
+    height: 800px;
+}
+
+.portrait {
+    text-align: right;
+}
+
+.header-red {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: hsl(0, 36%, 70%);
+    display: block;
+    font-weight: 300;
+    letter-spacing: 16px;
+    line-height: 1;
+}
+
+.header-black {
+    color: hsl(0, 6%, 24%);
+    font-weight: 600;
+    display: block;
+    letter-spacing: 16px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.input-address-div {
+    display: flex;
+    flex-direction: row;
+    border-radius: 27px;
+    justify-content: space-between;
+    height: 51px;
+    margin-top: 40px;
+    max-width: 550px;
+}
+
+.input-address {
+    border: solid 1px hsl(0, 36%, 70%);
+    outline: none;
+    border-radius: 28px;
+    height: 49px;
+    background-color: transparent;
+    width: 100%;
+    padding: 3px 0px 0px 30px;
+}
+
+.input-address::placeholder {
+    color: hsl(0, 36%, 70%);
+}
+
+.desc {
+    color: hsl(0, 36%, 70%);
+    line-height: 1.75;
+    font-size: 1rem;
+}
+
+input {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+}
+
+input[type="text"] {
+    padding-right: 0px;
+    padding-left: 30px;
+}
+
+input[type="submit"] {
+    margin: -1px 0px 0px -92px;
+    border: none;
+    height: 57px;
+    width: 112px;
+    border-radius: 29px;
+    background-image: url(images/icon-arrow.svg), linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    background-repeat: no-repeat;
+    background-position: 50%;
+    box-shadow: 2px 10px 30px hsl(0, 36%, 70%);
+}
+
+.btn-submit:hover {
+    cursor: pointer;
+    background-image: url(images/icon-arrow.svg), linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
+}
+
+
+.input-err {
+    margin: 16px 10px 8px 30px;
+    color: hsl(0, 100%, 74%);
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: none;
+}
+
+.input-err-invisible {
+    display: block;
+}
+
+input[type=email]:not {
+    border-color: 2px solid hsl(246, 25%, 77%);
+}
+
+input[type=email].error {
+    border: 2px solid  hsl(0, 100%, 74%);
+    background: url(images/icon-error.svg) no-repeat;
+    background-position: right 106px center;
+}
+
+input[type=email]:valid {
+    border-color: 2px solid hsl(246, 25%, 77%);
+}
+
+input[type=email]:invalid {
+    border: 2px solid hsl(0, 100%, 74%) !important;
+    background: url(images/icon-error.svg) no-repeat;
+    background-position: right 106px center;
+}
+
+input[type=email].error::placeholder {
+    visibility: hidden;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+   
+    
+}
